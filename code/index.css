@@ -67,7 +67,7 @@ a {
 
 /*Text Colors*/
 .primary {
-    color: #d20f60;
+    color: #018d3c;
 }
 
 .secondary {
@@ -112,7 +112,7 @@ a {
 
 /*Background Colors*/
 .bkg-primary {
-    background-color: #d20f60;
+    background-color: #018d3c;
 }
 
 .bkg-primary-light {
@@ -173,14 +173,14 @@ a {
 
 /*Border*/
 .border-bottom-primary {
-    border-bottom: 20px solid #d20f60;
+    border-bottom: 20px solid #018d3c;
 }
 
 /*Solid Buttons*/
 
 .btn-primary {
-    background-color: #d20f60;
-    border: 1px solid #d20f60;
+    background-color: #018d3c;
+    border: 1px solid #018d3c;
     border-radius: 3px;
     color: #ffffff;
     text-decoration: none;
@@ -192,8 +192,8 @@ a {
     outline: none;
 }
 .btn-primary:visited {
-    background-color: #d20f60;
-        border: 1px solid #d20f60;
+    background-color: #018d3c;
+        border: 1px solid #018d3c;
         border-radius: 3px;
         color: #ffffff;
         text-decoration: underline;
@@ -201,8 +201,8 @@ a {
         margin: 18px 0;
 }
 .btn-primary:focus-visible {
-    background-color: #d20f60;
-    border: 1px solid #d20f60;
+    background-color: #018d3c;
+    border: 1px solid #018d3c;
     border-radius: 3px;
     color: #ffffff;
     text-decoration: underline;
@@ -210,8 +210,8 @@ a {
     margin: 18px 0;
 }
 .btn-primary:focus{
-    background-color: #d20f60;
-    border: 1px solid #d20f60;
+    background-color: #018d3c;
+    border: 1px solid #018d3c;
     border-radius: 3px;
     color: #ffffff;
     text-decoration: underline;
@@ -219,8 +219,8 @@ a {
     margin: 18px 0;
 }
 .btn-primary:focus-within {
-    background-color: #d20f60;
-    border: 1px solid #d20f60;
+    background-color: #018d3c;
+    border: 1px solid #018d3c;
     border-radius: 3px;
     color: #ffffff;
     text-decoration: underline;
@@ -230,9 +230,9 @@ a {
 
 .btn-primary:hover {
     background-color: #ffffff;
-    border: 2px solid #d20f60;
+    border: 2px solid #018d3c;
     border-radius: 3px;
-    color: #d20f60;
+    color: #018d3c;
     font-weight: 600;
     text-decoration: none;
     padding: 10px 20px;
@@ -283,9 +283,9 @@ a {
 /*Outlined Buttons*/
 .btn-primary-outline {
     background-color: #ffffff;
-    border: 2px solid #d20f60;
+    border: 2px solid #018d3c;
     border-radius: 3px;
-    color: #d20f60;
+    color: #018d3c;
     font-weight: 600;
     text-decoration: none;
     padding: 10px 20px;
@@ -293,7 +293,7 @@ a {
 }
 
 .btn-primary-outline:hover {
-    background-color: #d20f60;
+    background-color: #018d3c;
     border-radius: 3px;
     color: #ffffff;
     text-decoration: none;
@@ -356,13 +356,13 @@ button:hover {
 
 /*Links*/
 .link-primary {
-    color: #d20f60;
+    color: #018d3c;
     font-weight: 600;
     text-decoration: none;
 }
 
 .link-primary:hover {
-    color: #d20f60;
+    color: #018d3c;
     font-weight: 400;
     text-decoration: none;
 }
@@ -456,7 +456,7 @@ button:hover {
 
 .scroll-arrow {
     display: inline-block;
-    color: #d20f60;
+    color: #018d3c;
     font-size: 30px;
     text-align: right;
     background-color: #ffffff;
@@ -466,4 +466,57 @@ button:hover {
 .scroll-arrow:hover {
     transform: scale(1.2);
     transition: .3s ease-in-out;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Titan+One);
+
+/* BODY */
+body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+
+::selection {
+    background: transparent;
+}
+
+/* CLOUDS */
+body:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    margin: auto;
+    border-radius: 100%;
+    display: block;
+}
+
+/* JUMP */
+h1 {
+    cursor: default;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100px;
+    margin: auto;
+    display: block;
+    -webkit-animation: bounce .3s ease infinite alternate;
+
+}
+
+/* ANIMATION */
+@-webkit-keyframes bounce {
+    100% {
+        top: -30px;
 }
